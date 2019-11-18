@@ -11,7 +11,12 @@
     >
     <v-subheader class="pt-4">Navigation</v-subheader>
       <v-list dense flat>
-        <v-list-item link v-for="(item, i) in navLinks" :key="i" router :to="item.route" color="primary">
+        <v-list-item
+          link v-for="(item, i) in navLinks"
+          :key="i"
+          router
+          :to="item.route"
+          color="primary">
           <v-list-item-action>
             <v-icon class="group">{{item.icon}}</v-icon>
           </v-list-item-action>
@@ -71,8 +76,8 @@ export default {
       },
       {
         icon: 'mdi-check-bold',
-        text: 'Tasks',
-        route: 'tasks',
+        text: 'Audits',
+        route: 'audits',
       },
     ],
   }),
