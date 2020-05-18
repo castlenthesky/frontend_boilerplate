@@ -1,6 +1,11 @@
 import Vue from "vue";
 import VueRouter, { RouteConfig } from "vue-router";
 import Home from "../views/Home.vue";
+import Sandbox from "../views/Sandbox.vue";
+import Payors from "../views/Payors.vue";
+import Referrals from "../views/Referrals.vue";
+import Tasks from "../views/Tasks.vue";
+import Team from "../views/Team.vue";
 
 Vue.use(VueRouter);
 
@@ -8,8 +13,32 @@ const routes: Array<RouteConfig> = [
   {
     path: "/",
     name: "Home",
-    
-    component: Home
+    component: Home,
+  },
+  {
+    path: "/sandbox",
+    name: "Sandbox",
+    component: Sandbox
+  },
+  {
+    path: "/tasks",
+    name: "Tasks",
+    component: Tasks
+  },
+  {
+    path: "/team",
+    name: "Team",
+    component: Team
+  },
+  {
+    path: "/payors",
+    name: "Payors",
+    component: Payors,
+  },
+  {
+    path: "/referrals",
+    name: "Referrals",
+    component: Referrals,
   },
   {
     path: "/about",

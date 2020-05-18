@@ -77,12 +77,22 @@ export default Vue.extend({
     mini: null,
     links: [
       { title: "Dashboard", icon: "mdi-view-dashboard", route: "/" },
-      { title: "Story Manager", icon: "mdi-script-text", route: "/plot" },
-      { title: "Locations", icon: "mdi-map", route: "/locations" },
       {
-        title: "Characters",
+        title: "Tasks",
+        icon: "mdi-view-list",
+        route: "/tasks"
+      },
+      {
+        title: "Team",
         icon: "mdi-account-supervisor",
-        route: "/characters"
+        route: "/team"
+      },
+      { title: "Sandbox", icon: "mdi-test-tube", route: "/sandbox" },
+      { title: "Payor Management", icon: "mdi-account-cash", route: "/payors" },
+      {
+        title: "Refferral Providers",
+        icon: "mdi-account-voice",
+        route: "/referrals"
       }
     ]
   })
